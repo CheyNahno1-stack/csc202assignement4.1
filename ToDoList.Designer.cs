@@ -38,14 +38,15 @@
             // 
             // txtTask
             // 
-            txtTask.Location = new Point(116, 99);
+            txtTask.Location = new Point(98, 99);
             txtTask.Name = "txtTask";
-            txtTask.Size = new Size(100, 23);
+            txtTask.Size = new Size(196, 23);
             txtTask.TabIndex = 0;
             txtTask.UseWaitCursor = true;
             // 
             // lstTasks
             // 
+            lstTasks.BackColor = SystemColors.ActiveCaption;
             lstTasks.FormattingEnabled = true;
             lstTasks.ItemHeight = 15;
             lstTasks.Location = new Point(458, 84);
@@ -56,9 +57,10 @@
             // 
             // bttnRemove
             // 
-            bttnRemove.Location = new Point(333, 172);
+            bttnRemove.Font = new Font("Perpetua Titling MT", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            bttnRemove.Location = new Point(306, 172);
             bttnRemove.Name = "bttnRemove";
-            bttnRemove.Size = new Size(92, 23);
+            bttnRemove.Size = new Size(119, 23);
             bttnRemove.TabIndex = 2;
             bttnRemove.Text = "Remove Task";
             bttnRemove.UseVisualStyleBackColor = true;
@@ -67,9 +69,10 @@
             // 
             // bttnSave
             // 
-            bttnSave.Location = new Point(350, 235);
+            bttnSave.Font = new Font("Perpetua Titling MT", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            bttnSave.Location = new Point(299, 235);
             bttnSave.Name = "bttnSave";
-            bttnSave.Size = new Size(75, 23);
+            bttnSave.Size = new Size(126, 23);
             bttnSave.TabIndex = 3;
             bttnSave.Text = "Save Task";
             bttnSave.UseVisualStyleBackColor = true;
@@ -78,9 +81,10 @@
             // 
             // bttnAdd
             // 
-            bttnAdd.Location = new Point(350, 114);
+            bttnAdd.Font = new Font("Perpetua Titling MT", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            bttnAdd.Location = new Point(323, 114);
             bttnAdd.Name = "bttnAdd";
-            bttnAdd.Size = new Size(75, 23);
+            bttnAdd.Size = new Size(102, 23);
             bttnAdd.TabIndex = 4;
             bttnAdd.Text = "Add Task";
             bttnAdd.UseVisualStyleBackColor = true;
@@ -89,17 +93,20 @@
             // 
             // bttnComplete
             // 
-            bttnComplete.Location = new Point(323, 287);
+            bttnComplete.Font = new Font("Perpetua Titling MT", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            bttnComplete.Location = new Point(299, 287);
             bttnComplete.Name = "bttnComplete";
-            bttnComplete.Size = new Size(102, 23);
+            bttnComplete.Size = new Size(126, 23);
             bttnComplete.TabIndex = 5;
             bttnComplete.Text = "Complete Task";
             bttnComplete.UseVisualStyleBackColor = true;
+            bttnComplete.UseWaitCursor = true;
             // 
             // background
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(800, 450);
             Controls.Add(bttnComplete);
             Controls.Add(bttnAdd);
